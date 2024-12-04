@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estacionamento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Escolha o Veículo</h1>
+            <button class="option-btn">
+                <img src="carro.jpg" alt="Imagem Carro">
+                Carro R$ 6.99
+            </button>
+        </div>
+
+        <div class="option">
+            <button class="option-btn">
+                <img src="moto.jpg" alt="Imagem Carro">
+                Moto R$ 3.99
+            </button>
+        </div>
+
+        <div class="option">
+            <button class="option-btn">
+                <img src="van.jpg" alt="Imagem Carro">
+                Van R$ 9.99
+            </button>
+        </div>
+
+            <button class="btn pronto">Pronto</button>
+        </a>
+    </div>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9; 
+    height: 100vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 20px; 
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1); 
+    max-width: 900px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 3rem; 
+    color: #e74c3c; 
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 40px;
+    font-family: 'Arial', sans-serif;
+}
+
+.vehicles-grid {
+    display: flex;
+    justify-content: space-around; 
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.vehicle-btn {
+    background-color: #e74c3c; 
+    color: white;
+    padding: 20px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 15px; 
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+    width: 200px; 
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.vehicle-btn img {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.vehicle-btn:hover {
+    background-color: #c0392b;
+    transform: scale(1.05); 
+}
+
+.pronto-btn {
+    background-color: #f39c12; 
+    color: white;
+    padding: 15px 40px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+    display: none; 
+}
+
+.pronto-btn:hover {
+    background-color: #e67e22; 
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+    .vehicle-btn {
+        padding: 15px;
+        width: 150px;
+        height: 180px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .pronto-btn {
+        padding: 12px 30px;
+        font-size: 1.2rem;
+    }
+}
+
+</style>
+
+</body>
+</html>

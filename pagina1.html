@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Escolha um Serviço</h1>
+
+        <a href="http://127.0.0.1:5500/Aulas%200412/pagina%202.html">
+            <button class="service-btn">
+                <img src="estacionamento.jpg" alt="Imagem Estacionamento">
+                Estacionamento
+            </button>
+        </a>
+
+        <a href="http://127.0.0.1:5500/Aulas%200412/pagina2.html">
+            <button class="service-btn">
+                <img src="lavagem carro.jpg" alt="Imagem Lavagem">
+                Lavagem
+            </button>
+        </a>
+
+        <p class="about">Nossa empresa oferece serviços de estacionamento e lavagem com qualidade e segurança.</p>
+    </div>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9; 
+    height: 100vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 50px;
+    border-radius: 20px; 
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 3rem; 
+    color: #e74c3c; 
+    margin-bottom: 30px;
+    font-family: 'Arial', sans-serif;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 40px;
+    font-family: 'Arial', sans-serif;
+}
+
+.btn-servico {
+    display: inline-block;
+    background-color: #e74c3c;
+    color: white;
+    padding: 20px 40px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+    margin: 20px; 
+    width: 250px; 
+    height: 250px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-servico img {
+    width: 60%; 
+    height: 60%;
+    object-fit: cover;
+    border-radius: 50%; 
+}
+
+.btn-servico:hover {
+    background-color: #c0392b; 
+    transform: scale(1.1);
+}
+
+.btn-servico span {
+    position: absolute;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    z-index: 10;
+}
+
+@media screen and (max-width: 768px) {
+    .btn-servico {
+        padding: 15px;
+        width: 200px;
+        height: 200px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .btn-servico span {
+        font-size: 1.5rem;
+    }
+}
+
+    </style>
+
+</body>
+</html>
+
